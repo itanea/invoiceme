@@ -3,4 +3,6 @@ php:
   - '7.3'
   - '7.4'
 
-composer install
+install:
+  - composer require orchid/platform
+
