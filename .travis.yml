@@ -17,7 +17,8 @@ before_script:
   - composer self-update
   - composer install --no-interaction
   - php artisan key:generate
-  - php artisan migrate --no-interaction -vvv
+  - php artisan orchid:install
+  - php artisan orchid:admin admin admin@admin.com password
 
 script:
   - vendor/bin/phpunit
